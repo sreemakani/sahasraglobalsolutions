@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b21b6">
+  <meta name="description" content="Sahasra Global Solutions provides IT services, recruitment and staffing, payroll and HR outsourcing, loan processing support, and IT training and consulting.">
+  <title>Sahasra Global Solutions | Technology, Talent & Business Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--purple:#5b21b6;--purple2:#7c3aed;--ink:#20143b;--muted:#6d6680;--pale:#f5f0ff;--line:#e9e2f5;--white:#fff;--shadow:0 18px 50px rgba(54,27,100,.10)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:90px} body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.6} h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.15;letter-spacing:-.035em;margin:0} p{margin:0;color:var(--muted)} a{color:inherit;text-decoration:none} .container{width:min(1140px,calc(100% - 40px));margin:auto}
+    .topbar{background:#2e125d;color:#f3eaff;font-size:13px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(233,226,245,.8)} .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;min-width:220px}.brandmark{width:43px;height:43px;border-radius:14px;background:linear-gradient(135deg,#7c3aed,#4c1d95);display:grid;place-items:center;color:white;font-weight:800;font-family:Manrope;font-size:18px;box-shadow:0 7px 18px #7c3aed40}.brandname{font:800 16px Manrope;line-height:1.15}.brandname small{display:block;font:600 10px "DM Sans";letter-spacing:.14em;color:var(--purple);margin-top:5px}
+    .navlinks{display:flex;align-items:center;gap:26px;font-size:13px;font-weight:700;color:#4b4260}.navlinks a:hover{color:var(--purple)}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:13px 19px;font-size:14px;font-weight:700;transition:.2s}.navcta,.btn-primary{background:var(--purple);color:white;box-shadow:0 8px 20px #5b21b62b}.navcta:hover,.btn-primary:hover{background:#46158f;transform:translateY(-1px)}.btn-secondary{background:white;border:1px solid var(--line);color:var(--ink)}.btn-secondary:hover{border-color:#c4b5fd;background:#fcfaff}.menu-btn{display:none;background:white;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:20px}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 90% 5%,#e9dcff 0,transparent 35%),linear-gradient(180deg,#fcfaff 0%,#fff 100%);padding:84px 0 76px}.hero:before{content:"";position:absolute;width:420px;height:420px;border:1px solid #d9c7ff;border-radius:50%;right:-220px;bottom:-230px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #e3d5ff;background:#f4edff;color:var(--purple);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:800;letter-spacing:.04em;margin-bottom:24px}.dot{width:7px;height:7px;border-radius:50%;background:#8b5cf6}.hero h1{font-size:clamp(39px,5.1vw,64px);max-width:680px}.hero h1 span{color:var(--purple)}.hero-copy{font-size:17px;max-width:555px;margin:23px 0 28px;line-height:1.8}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.trustline{display:flex;align-items:center;gap:12px;margin-top:31px;font-size:12px;color:#716781}.trustline strong{color:#35264f}.mini-avatars{display:flex}.mini-avatars span{width:28px;height:28px;border:2px solid white;background:#e9d5ff;color:#5b21b6;border-radius:50%;display:grid;place-items:center;font-size:10px;font-weight:800;margin-left:-6px}.mini-avatars span:first-child{margin-left:0}
+    .hero-visual{position:relative;min-height:390px;display:grid;place-items:center}.orbit{position:absolute;width:355px;height:355px;border-radius:50%;border:1px dashed #c4b5fd}.orbit:before,.orbit:after{content:"";position:absolute;border-radius:50%;background:#a78bfa}.orbit:before{width:12px;height:12px;top:40px;right:44px}.orbit:after{width:8px;height:8px;bottom:35px;left:28px}.visual-card{position:relative;width:min(390px,100%);background:white;border:1px solid #eee7fa;border-radius:25px;padding:25px;box-shadow:0 30px 70px #32116b1c;z-index:1}.visual-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:23px}.visual-head b{font:800 15px Manrope}.status{font-size:10px;color:#15803d;background:#dcfce7;border-radius:20px;padding:5px 9px;font-weight:800}.visual-label{font-size:11px;color:#8b8299;font-weight:700}.visual-big{font:800 31px Manrope;margin:5px 0 18px}.visual-big span{font-size:13px;color:#8b8299;font-weight:500}.progress{height:7px;background:#f1eafa;border-radius:99px;overflow:hidden}.progress span{display:block;width:76%;height:100%;background:linear-gradient(90deg,#7c3aed,#c084fc);border-radius:99px}.metric-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:17px}.metric{background:#faf7ff;border:1px solid #f0e8ff;border-radius:14px;padding:13px}.metric strong{display:block;font:800 19px Manrope}.metric small{font-size:10px;color:#817590}.floating{position:absolute;background:white;border:1px solid #eee7fa;border-radius:15px;padding:12px 15px;box-shadow:var(--shadow);font-size:11px;font-weight:800;display:flex;align-items:center;gap:9px;z-index:2}.float-icon{width:32px;height:32px;border-radius:10px;background:#f1e8ff;display:grid;place-items:center;color:var(--purple);font-size:17px}.float-one{top:44px;left:-10px}.float-two{right:-7px;bottom:39px}
+    .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0}.strip-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.strip-label{font-size:11px;font-weight:800;letter-spacing:.1em;color:#8a8198;text-transform:uppercase}.pill-list{display:flex;gap:10px;flex-wrap:wrap}.pill{padding:8px 13px;border-radius:999px;background:#faf8ff;border:1px solid #eee7fa;font-size:12px;font-weight:700;color:#57476f}
+    section{padding:88px 0}.section-head{max-width:680px;margin:0 auto 42px;text-align:center}.kicker{font-size:12px;color:var(--purple);font-weight:800;letter-spacing:.13em;text-transform:uppercase;margin-bottom:13px}.section-head h2{font-size:clamp(30px,3.8vw,44px);margin-bottom:15px}.section-head p{font-size:15px;line-height:1.8}
+    .services{background:#fcfaff}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{padding:27px 25px;border:1px solid var(--line);border-radius:20px;background:white;transition:.22s;min-height:242px}.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#d6c5ff}.service-icon{width:49px;height:49px;display:grid;place-items:center;border-radius:15px;background:#f0e7ff;color:var(--purple);font-size:23px;margin-bottom:22px}.service-card h3{font-size:18px;margin-bottom:10px}.service-card p{font-size:13px;line-height:1.8}.learn{display:inline-flex;margin-top:17px;color:var(--purple);font-size:12px;font-weight:800;gap:7px}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:68px;align-items:center}.about-art{min-height:400px;background:linear-gradient(145deg,#f4edff,#e7d9ff);border-radius:28px;position:relative;display:grid;place-items:center;overflow:hidden}.about-art:before,.about-art:after{content:"";position:absolute;border:1px solid #c4a8ff;border-radius:50%;width:330px;height:330px}.about-art:after{width:250px;height:250px}.about-core{z-index:1;background:white;border-radius:24px;padding:27px;box-shadow:0 20px 50px #5b21b62b;text-align:center;width:220px}.about-core .brandmark{margin:0 auto 15px;width:56px;height:56px;font-size:22px}.about-core strong{display:block;font:800 17px Manrope}.about-core p{font-size:11px;margin-top:7px}.about-badge{position:absolute;z-index:2;background:white;border:1px solid #eee7fa;padding:12px 16px;border-radius:14px;box-shadow:var(--shadow);font-size:12px;font-weight:800}.badge-a{top:40px;left:20px}.badge-b{bottom:38px;right:18px}.about-copy h2{font-size:clamp(30px,3.6vw,43px);margin-bottom:20px}.about-copy>p{font-size:15px;line-height:1.9;margin-bottom:23px}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:26px 0}.check{display:flex;gap:9px;font-size:13px;font-weight:700;color:#4d4260}.check span{display:grid;place-items:center;flex:0 0 21px;height:21px;border-radius:50%;background:#ede9fe;color:var(--purple);font-size:12px}
+    .process{background:#f8f5ff}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:white;border:1px solid var(--line);padding:26px;border-radius:18px}.step-no{font:800 13px Manrope;color:var(--purple);background:#f0e7ff;border-radius:10px;padding:8px 11px;display:inline-block;margin-bottom:18px}.step h3{font-size:17px;margin-bottom:9px}.step p{font-size:13px;line-height:1.8}
+    .cta-section{padding:0 0 88px}.cta-banner{background:linear-gradient(115deg,#4c1d95,#7c3aed);border-radius:27px;padding:50px 55px;color:white;display:flex;align-items:center;justify-content:space-between;gap:35px;position:relative;overflow:hidden}.cta-banner:after{content:"";position:absolute;width:280px;height:280px;border:1px solid #ffffff35;border-radius:50%;right:20%;top:-170px}.cta-banner h2{font-size:clamp(28px,3.3vw,39px);max-width:590px;margin-bottom:13px;position:relative;z-index:1}.cta-banner p{color:#e9dcff;font-size:14px;max-width:580px;position:relative;z-index:1}.cta-banner .btn{background:white;color:#4c1d95;white-space:nowrap;position:relative;z-index:1}.cta-banner .btn:hover{background:#f3e8ff}
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}.contact-copy h2{font-size:38px;margin-bottom:16px}.contact-copy>p{font-size:14px;line-height:1.9;margin-bottom:27px}.contact-detail{display:flex;align-items:center;gap:13px;margin:18px 0}.contact-detail .service-icon{width:42px;height:42px;flex-shrink:0;margin:0}.contact-detail strong{display:block;font-size:13px}.contact-detail small{font-size:12px;color:var(--muted)}.contact-form{border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}.contact-form h3{font-size:22px;margin-bottom:7px}.contact-form>p{font-size:13px;margin-bottom:24px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#514466}.field input,.field select,.field textarea{width:100%;border:1px solid #e4dced;border-radius:10px;padding:12px 13px;font:13px "DM Sans";outline:none;background:white;color:var(--ink)}.field input:focus,.field select:focus,.field textarea:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px #8b5cf61a}.field textarea{resize:vertical;min-height:105px}.form-note{font-size:10px;color:#8b8299;margin-top:12px}.contact-form .btn{width:100%;border:0;margin-top:18px;cursor:pointer}
+    footer{background:#21103e;color:#fff;padding:47px 0 20px}.footer-top{display:flex;justify-content:space-between;gap:35px;padding-bottom:35px;border-bottom:1px solid #ffffff20}.footer-brand{max-width:330px}.footer-brand .brandname{color:white}.footer-brand .brandname small{color:#c4b5fd}.footer-brand p{color:#c8bddb;font-size:12px;line-height:1.8;margin-top:17px}.footer-links h4{font-size:12px;margin:0 0 13px}.footer-links a{display:block;color:#c8bddb;font-size:12px;margin:8px 0}.footer-links a:hover{color:white}.footer-bottom{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding-top:20px;color:#b9accd;font-size:11px}.whatsapp{position:fixed;right:22px;bottom:22px;z-index:20;width:57px;height:57px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:white;box-shadow:0 9px 25px #0b6b3438;font-size:27px;border:3px solid white}.whatsapp:hover{transform:translateY(-3px)}
+    @media(max-width:900px){.navlinks{gap:15px}.navcta{padding:11px 13px}.hero-grid{gap:25px}.hero-visual{min-height:350px}.orbit{width:300px;height:300px}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:35px}.cta-banner{padding:40px}.contact-grid{gap:28px}}
+    @media(max-width:720px){.container{width:min(100% - 30px,560px)}.topbar .container{justify-content:center;text-align:center}.nav{height:68px}.brand{min-width:0}.brandname{font-size:14px}.brandmark{width:39px;height:39px}.menu-btn{display:block}.navcta{display:none}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:white;border-bottom:1px solid var(--line);padding:16px 22px 22px;flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:12px 0;border-bottom:1px solid #f1ebf8}.navlinks a:last-child{border-bottom:0}.hero{padding:58px 0 50px}.hero-grid{grid-template-columns:1fr;gap:22px}.hero h1{font-size:42px}.hero-copy{font-size:15px}.hero-visual{min-height:340px}.visual-card{max-width:360px}.float-one{left:0;top:15px}.float-two{right:0;bottom:10px}.orbit{width:280px;height:280px}.strip-inner{justify-content:center;text-align:center}.strip-label{width:100%}section{padding:65px 0}.section-head{margin-bottom:30px}.service-grid,.steps{grid-template-columns:1fr}.service-card{min-height:0}.about-grid{grid-template-columns:1fr}.about-art{min-height:330px;order:2}.about-copy{order:1}.checklist{grid-template-columns:1fr}.cta-section{padding-bottom:65px}.cta-banner{padding:32px 25px;align-items:flex-start;flex-direction:column}.contact-grid{grid-template-columns:1fr}.contact-copy h2{font-size:32px}.contact-form{padding:22px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-top{flex-wrap:wrap}.footer-brand{max-width:100%;width:100%}.footer-links{min-width:42%}.footer-bottom{justify-content:center;text-align:center}.whatsapp{right:15px;bottom:15px;width:52px;height:52px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Practical solutions for technology, talent & business</span><span>Call us: <a href="tel:+917396969888">+91 73969 69888</a></span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Sahasra Global Solutions home">
+        <span class="brandmark">S</span><span class="brandname">Sahasra Global Solutions<small>TECHNOLOGY • TALENT • GROWTH</small></span>
+      </a>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="#process">How We Work</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="navcta" href="#contact">Discuss a Project <span>↗</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> YOUR PARTNER FOR WHAT'S NEXT</div>
+          <h1>Smart solutions.<br><span>Stronger businesses.</span></h1>
+          <p class="hero-copy">From technology and talent to everyday business operations, Sahasra Global Solutions helps organisations move forward with dependable, people-first services.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#contact">Let's Talk Business <span>↗</span></a><a class="btn btn-secondary" href="#services">Explore Our Services <span>↓</span></a></div>
+          <div class="trustline"><div class="mini-avatars"><span>IT</span><span>HR</span><span>BP</span></div><span><strong>One partner, multiple capabilities.</strong><br>Solutions shaped around your business needs.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Business solutions illustration">
+          <div class="orbit"></div>
+          <div class="floating float-one"><span class="float-icon">✦</span><span>Technology<br>& innovation</span></div>
+          <div class="visual-card">
+            <div class="visual-head"><b>Your growth dashboard</b><span class="status">READY TO BUILD</span></div>
+            <span class="visual-label">CONNECTED BUSINESS SERVICES</span>
+            <div class="visual-big">One clear direction <span>↗</span></div>
+            <div class="progress"><span></span></div>
+            <div class="metric-row"><div class="metric"><strong>IT</strong><small>Technology services</small></div><div class="metric"><strong>People</strong><small>Recruitment & HR</small></div><div class="metric"><strong>Process</strong><small>Business support</small></div><div class="metric"><strong>Skills</strong><small>Training & consulting</small></div></div>
+          </div>
+          <div class="floating float-two"><span class="float-icon">◎</span><span>People-first<br>partnerships</span></div>
+        </div>
+      </div>
+    </section>
+    <div class="strip"><div class="container strip-inner"><span class="strip-label">How we can help</span><div class="pill-list"><span class="pill">IT Services</span><span class="pill">Recruitment & Staffing</span><span class="pill">Payroll & HR</span><span class="pill">Business Process Support</span></div></div></div>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head"><div class="kicker">What we do</div><h2>Services that move your business forward</h2><p>Flexible support for businesses at different stages of growth. Tell us your goals and we'll help you identify the right next step.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-icon">⌘</div><h3>IT Services</h3><p>Technology support and digital solutions designed around your operational needs, workflows and business goals.</p><a class="learn" href="#contact" data-service="IT Services">Discuss IT services <span>→</span></a></article>
+          <article class="service-card"><div class="service-icon">♧</div><h3>Recruitment & Staffing</h3><p>Talent sourcing and hiring support to help you connect with suitable candidates and build capable teams.</p><a class="learn" href="#contact" data-service="Recruitment & Staffing">Build your team <span>→</span></a></article>
+          <article class="service-card"><div class="service-icon">▤</div><h3>Payroll & HR Outsourcing</h3><p>Process-oriented payroll and HR administration support that helps teams stay organised and focused.</p><a class="learn" href="#contact" data-service="Payroll & HR Outsourcing">Explore HR support <span>→</span></a></article>
+          <article class="service-card"><div class="service-icon">⇄</div><h3>Loan Processing Support</h3><p>Administrative and process support for eligible lending workflows, subject to client requirements and applicable regulations.</p><a class="learn" href="#contact" data-service="Loan Processing Support">Discuss process support <span>→</span></a></article>
+          <article class="service-card"><div class="service-icon">⌁</div><h3>IT Training & Consulting</h3><p>Practical learning and guidance to help individuals and teams strengthen their technical capabilities.</p><a class="learn" href="#contact" data-service="IT Training & Consulting">Talk about training <span>→</span></a></article>
+          <article class="service-card"><div class="service-icon">✧</div><h3>Business-Focused Approach</h3><p>Clear communication, adaptable support and a focus on understanding the requirement before recommending a solution.</p><a class="learn" href="#contact" data-service="General Business Enquiry">Start a conversation <span>→</span></a></article>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-art"><span class="about-badge badge-a">✦ Practical thinking</span><div class="about-core"><div class="brandmark">S</div><strong>Sahasra Global Solutions</strong><p>Technology • Talent • Business</p></div><span class="about-badge badge-b">◎ People-first service</span></div>
+        <div class="about-copy"><div class="kicker">About Sahasra</div><h2>A responsive partner for your next stage of growth.</h2><p>Sahasra Global Solutions brings together technology services, talent solutions and business process support under one roof. We aim to make it easier for clients to find practical support, communicate clearly and keep important work moving.</p><p>Every engagement starts with understanding your needs, defining the scope and agreeing on a clear way forward.</p><div class="checklist"><div class="check"><span>✓</span> Requirement-led solutions</div><div class="check"><span>✓</span> Clear communication</div><div class="check"><span>✓</span> Flexible service options</div><div class="check"><span>✓</span> Focus on long-term value</div></div><a class="btn btn-primary" href="#contact">Get to Know Us <span>↗</span></a></div>
+      </div>
+    </section>
+    <section class="process" id="process">
+      <div class="container"><div class="section-head"><div class="kicker">Simple by design</div><h2>How we work with you</h2><p>A straightforward process keeps expectations clear from the first conversation through delivery.</p></div>
+        <div class="steps"><article class="step"><span class="step-no">STEP 01</span><h3>Understand</h3><p>We listen to your requirements, timelines and priorities to understand what success looks like for you.</p></article><article class="step"><span class="step-no">STEP 02</span><h3>Plan</h3><p>We discuss the appropriate service, scope, deliverables and next steps before work begins.</p></article><article class="step"><span class="step-no">STEP 03</span><h3>Move Forward</h3><p>We stay in touch as the work progresses and aim to provide responsive, organised support.</p></article></div>
+      </div>
+    </section>
+    <section class="cta-section"><div class="container"><div class="cta-banner"><div><h2>Have a requirement? Let's find the right solution.</h2><p>Tell us what your business needs. We'll get back to you to discuss the next steps.</p></div><a class="btn" href="#contact">Send an Enquiry <span>↗</span></a></div></div></section>
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy"><div class="kicker">Contact us</div><h2>Let's start a conversation.</h2><p>Looking for a service partner, hiring support or training guidance? Share a few details and connect with Sahasra Global Solutions.</p>
+          <div class="contact-detail"><div class="service-icon">☎</div><div><strong>Call us</strong><small><a href="tel:+917396969888">+91 73969 69888</a></small></div></div>
+          <div class="contact-detail"><div class="service-icon">◉</div><div><strong>WhatsApp</strong><small><a href="https://wa.me/917396969888?text=Hello%20Sahasra%20Global%20Solutions%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Chat with our team</a></small></div></div>
+          <div class="contact-detail"><div class="service-icon">⌖</div><div><strong>Service enquiries</strong><small>IT • Recruitment • HR • Business Support</small></div></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Send an enquiry</h3><p>Complete the form and it will open WhatsApp with your message ready to send.</p>
+          <div class="form-grid">
+            <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required placeholder="Enter your name"></div>
+            <div class="field"><label for="company">Company (optional)</label><input id="company" name="company" autocomplete="organization" placeholder="Company name"></div>
+            <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Your contact number"></div>
+            <div class="field"><label for="service">Service required *</label><select id="service" name="service" required><option value="">Select a service</option><option>IT Services</option><option>Recruitment & Staffing</option><option>Payroll & HR Outsourcing</option><option>Loan Processing Support</option><option>IT Training & Consulting</option><option>Other Business Enquiry</option></select></div>
+            <div class="field full"><label for="message">How can we help? *</label><textarea id="message" name="message" required placeholder="Briefly describe your requirement"></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Continue on WhatsApp <span>↗</span></button>
+          <div class="form-note">Your message is not stored on this website. WhatsApp opens so you can review and send it yourself.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><div class="footer-top">
+    <div class="footer-brand"><a class="brand" href="#home"><span class="brandmark">S</span><span class="brandname">Sahasra Global Solutions<small>TECHNOLOGY • TALENT • GROWTH</small></span></a><p>Practical technology, talent and business support to help organisations move forward with confidence.</p></div>
+    <div class="footer-links"><h4>Explore</h4><a href="#about">About Us</a><a href="#services">Our Services</a><a href="#process">How We Work</a><a href="#contact">Contact</a></div>
+    <div class="footer-links"><h4>Services</h4><a href="#services">IT Services</a><a href="#services">Recruitment & Staffing</a><a href="#services">Payroll & HR</a><a href="#services">Training & Consulting</a></div>
+    <div class="footer-links"><h4>Get in touch</h4><a href="tel:+917396969888">+91 73969 69888</a><a href="https://wa.me/917396969888" target="_blank" rel="noopener">WhatsApp us ↗</a><a href="#contact">Request a callback</a></div>
+  </div><div class="footer-bottom"><span>© <span id="year"></span> Sahasra Global Solutions. All rights reserved.</span><span>Technology • Talent • Business Solutions</span></div></div></footer>
+  <a class="whatsapp" href="https://wa.me/917396969888?text=Hello%20Sahasra%20Global%20Solutions%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat with Sahasra Global Solutions on WhatsApp">◔</a>
+  <script>
+    const menuBtn=document.getElementById('menuBtn');
+    const navlinks=document.getElementById('navlinks');
+    menuBtn.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰';});
+    navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+    document.querySelectorAll('[data-service]').forEach(link=>link.addEventListener('click',()=>{const select=document.getElementById('service');const wanted=link.dataset.service;for(const option of select.options){if(option.text===wanted){select.value=option.value;break;}}}));
+    document.getElementById('contactForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const data=new FormData(e.currentTarget);
+      const message=[
+        'Hello Sahasra Global Solutions, I would like to make an enquiry.',
+        '',
+        'Name: '+data.get('name'),
+        'Company: '+(data.get('company')||'Not provided'),
+        'Phone: '+data.get('phone'),
+        'Service: '+data.get('service'),
+        'Requirement: '+data.get('message')
+      ].join('\\n');
+      window.open('https://wa.me/917396969888?text='+encodeURIComponent(message),'_blank','noopener');
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
